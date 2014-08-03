@@ -2,6 +2,76 @@
     "dailyData":
     [
         {
+            "date": "03_08_2014",
+            "data": { "palestine": {
+                            "killed" : {"total": 1525, "civilian": 1033, "children" : 329, "woman": 187},
+                            "injured" : {"total": 8265, "children": 2502, "woman": 1626, "elderly": 303},
+                            "displaced": 475000, 
+                            "hospitals_destroyed" : 34,
+                            "schools_destroyed" : 138,
+                            "children_need_psychosocial_treatment" : 27000,
+                            "need_shelter" : 255000,
+                            "need_food" : 255000
+                            },
+                        "isreal" : {
+                            "killed" : {"total": 66, "civilian": 2, "children" : 0, "woman": 0}
+                        }
+                }
+        },
+        {
+            "date": "02_07_2014",
+            "data": { "palestine": {
+                            "killed" : {"total": 1439, "civilian": 925, "children" : 286, "woman": 187},
+                            "injured" : {"total": 8265, "children": 2502, "woman": 1626, "elderly": 303},
+                            "displaced": 240000, 
+                            "hospitals_destroyed" : 23,
+                            "schools_destroyed" : 133,
+                            "children_need_psychosocial_treatment" : 27000,
+                            "need_shelter" : 255000,
+                            "need_food" : 255000
+                            },
+                        "isreal" : {
+                            "killed" : {"total": 66, "civilian": 2, "children" : 0, "woman": 0}
+                        }
+                }
+        },
+        {
+            "date": "01_08_2014",
+            "data": { "palestine": {
+                            "killed" : {"total": 1373, "civilian": 852, "children" : 252, "woman": 181},
+                            "injured" : {"total": 8265, "children": 2502, "woman": 1626},
+                            "displaced": 250000, 
+                            "displaced_total": 457000, 
+                            "hospitals_destroyed" : 24,
+                            "schools_destroyed" : 137,
+                            "children_need_psychosocial_treatment" : 303000,
+                            "families_home_destroyed": 9765,
+                            "need_shelter" : 255000,
+                            "need_food" : 255000
+                            },
+                        "isreal" : {
+                            "killed" : {"total": 59, "civilian": 2, "children" : 0, "woman": 0}
+                        }
+                }
+        },
+        {
+            "date": "31_07_2014",
+            "data": { "palestine": {
+                            "killed" : {"total": 1263, "civilian": 852, "children" : 249, "woman": 135},
+                            "injured" : {"total": 6233, "children": 1949, "woman": 1160},
+                            "displaced": 245000, 
+                            "hospitals_destroyed" : 24,
+                            "schools_destroyed" : 136,
+                            "children_need_psychosocial_treatment" : 299000,
+                            "need_shelter" : 255000,
+                            "need_food" : 255000
+                            },
+                        "isreal" : {
+                            "killed" : {"total": 59, "civilian": 2, "children" : 0, "woman": 0}
+                        }
+                }
+        },
+        {
             "date": "30_07_2014",
             "data": { "palestine": {
                             "killed" : {"total": 1118, "civilian": 827, "children" : 243, "woman": 131},
@@ -9,7 +79,7 @@
                             "displaced": 240000, 
                             "hospitals_destroyed" : 23,
                             "schools_destroyed" : 133,
-                            "children_need_psychosocial_treatment" : 27000,
+                            "children_need_psychosocial_treatment" : 270000,
                             "need_shelter" : 240000,
                             "need_food" : 240000
                             },

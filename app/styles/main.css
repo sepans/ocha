@@ -9,8 +9,32 @@
 body {
     padding-top: 20px;
     padding-bottom: 20px;
-    font-family: helvetica, 'sans serif', arial;
+    font-family: 'Open Sans', sans-serif, helvetica, arial;
     font-size: 16px;
+    background-color: #ededed;
+    
+}
+
+.container {
+    background-color: #ededed;
+    background: url(../images/bg.png) 0 0 no-repeat;
+}
+
+.header {
+    margin-bottom: 10px;
+}
+
+.header h3 {
+    border: none;
+    color: #5B92E5;
+}
+
+.header img {
+    width: 2.5em;
+}
+
+.row {
+    margin-left: 0;
 }
 
 h2 {
@@ -50,6 +74,21 @@ h2 {
     padding: 0;
 }
 
+h4.palestine {
+    background: url(../images/palestine-flag.png) 0 0 no-repeat;
+}
+
+h4.isreal {
+    background: url(../images/isreal-flag.png) 0 0 no-repeat;
+
+}
+
+h4 {
+    background-size: auto 2em;
+    padding-left: 2.5em;
+    line-height: 2.1em;
+
+}
 
 .palestine .civil {
     color: #534D4C;
@@ -68,39 +107,48 @@ h2 {
 }
 
 .vis {
-    margin-right: 10px;
-    margin-top: 10px;
+    margin-right: 5px;
+    margin-top: 5px;
 }
 .vis span {
     display: inline-block;
-    width: 10px;
-    height: 10px;
+    width: 5px;
+    height: 5px;
     margin: 2px;
     padding: 0;
 }
 
 .vis span {
+    position: relative;
     
 }
 .vis span .img {
-    transition: all linear 0.2s;
+    transition: all linear 0.1s;
     background-color: #534D4C;
-    width: 7px;
-    height: 7px;
+    width: 5px;
+    height: 5px;
     margin: 0px 0 0 0px;
     background-size: 5px auto;
     opacity: 0.5;
+    position: absolute;
+    
+    -webkit-filter: opacity(.5);
+    filter: opacity(.5);
+    
 
 }
 .vis .child:hover .img {
     border: 3px solid #E34C47;
     position: absolute;
-    width: 200px;
-    height: 120px;
-    margin: -125px 0 0 -100px;
-    background-size: 200px auto;
+    width: 250px;
+    height: 145px;
+    margin: -140px 0 0 -100px;
+    background-size: 250px auto;
     opacity: 1;
+    border: 1px solid #E34C47;
     z-index: 10;
+    -webkit-filter: opacity(1);
+    filter: opacity(1);
 
 
 }
@@ -114,7 +162,7 @@ h2 {
 }
 
 .palestine .vis .child {
-    border: 3px solid #E34C47;
+    background-color: #E34C47;
 }
 
 .vis .isreal {
@@ -126,17 +174,21 @@ h2 {
 }
 
 .percent {
-    border: 1px solid black;
+    
     margin-right: 10px;
-    height: 25px;
+    height: 4px;
     position: relative;
     padding-left: 5px;
+    background-color: #AAA;
+    margin-top: 1.5em;
 }
 
 .percent span {
     font-size: 14px;
     vertical-align: middle;
-    color: #DDD;
+    display: inline-block;
+    margin-top: -3.5em;
+
 }
 
 .palestine .percentCivil {
@@ -153,7 +205,14 @@ h2 {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
+    z-index: 1;
+}
+
+.footer {
+    margin: 0;
+    margin-top :20px;
+    border-top: 1px solid #555;
+
 }
 
 

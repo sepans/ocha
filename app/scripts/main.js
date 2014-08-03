@@ -3,7 +3,7 @@
 
 	'use strict';
 
-	var imageNum = 22;
+	var imageNum = 35;
 
 	$.getJSON('data.json', function(data) {
 		console.log(data);
@@ -25,7 +25,7 @@
 
         $('.vis .child .img').each(function() {
 
-			$(this).css('background-image', 'url(images/'+(i % imageNum + 1)+'.jpg)');
+			$(this).css('background-image', 'url(images/children/'+(i % imageNum + 1)+'.jpg)');
 			i++;
         });
 
