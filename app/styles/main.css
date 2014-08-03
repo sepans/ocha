@@ -1,0 +1,187 @@
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: helvetica, 'sans serif', arial;
+    font-size: 16px;
+}
+
+h2 {
+    font-size: 1.4em;
+    margin: 0;
+    padding: 5px 0;
+    border-bottom: 1px dotted #555;
+    margin-top: 20px;
+}
+
+.total {
+    font-size: 3.2em;
+    font-weight: bold;
+}
+.breakdown_num {
+    font-size: 1.8em;
+    display: block;
+    text-align: left;
+}
+.breakdown_title {
+    font-size: 1.2em;
+    display: block;
+    text-align: left;
+}
+
+.damage .breakdown_title {
+
+}
+
+.damage .breakdown_num {
+    font-size: 3.2em;
+    font-weight: bold;
+
+}
+
+.col-md-4 {
+    padding: 0;
+}
+
+
+.palestine .civil {
+    color: #534D4C;
+}
+
+.palestine .woman {
+    color: #91C353;
+}
+
+.palestine .child {
+    color: #E34C47;
+}
+
+.isreal {
+    color: #236E9B;
+}
+
+.vis {
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.vis span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 2px;
+    padding: 0;
+}
+
+.vis span {
+    
+}
+.vis span .img {
+    transition: all linear 0.2s;
+    background-color: #534D4C;
+    width: 7px;
+    height: 7px;
+    margin: 0px 0 0 0px;
+    background-size: 5px auto;
+    opacity: 0.5;
+
+}
+.vis .child:hover .img {
+    border: 3px solid #E34C47;
+    position: absolute;
+    width: 200px;
+    height: 120px;
+    margin: -125px 0 0 -100px;
+    background-size: 200px auto;
+    opacity: 1;
+    z-index: 10;
+
+
+}
+
+.palestine .vis .civil {
+    background-color: #534D4C;
+}
+
+.palestine .vis .woman {
+    background-color: #91C353;
+}
+
+.palestine .vis .child {
+    border: 3px solid #E34C47;
+}
+
+.vis .isreal {
+    background-color: #236E9B;
+}
+
+.isreal .vis .civil {
+    background-color: #236E9B;
+}
+
+.percent {
+    border: 1px solid black;
+    margin-right: 10px;
+    height: 25px;
+    position: relative;
+    padding-left: 5px;
+}
+
+.percent span {
+    font-size: 14px;
+    vertical-align: middle;
+    color: #DDD;
+}
+
+.palestine .percentCivil {
+    background-color: #E34C47;
+}
+
+.isreal .percentCivil {
+    background-color: #236E9B;
+}
+
+.percent .percentCivil {
+    height: 100%;
+    overlow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+   /*
+    .container {
+        max-width: 730px;
+    }
+    */
+
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 30px;
+    }
+    
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+        border-bottom: 0;
+    }
+}

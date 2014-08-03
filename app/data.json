@@ -1,0 +1,58 @@
+{
+    "dailyData":
+    [
+        {
+            "date": "30_07_2014",
+            "data": { "palestine": {
+                            "killed" : {"total": 1118, "civilian": 827, "children" : 243, "woman": 131},
+                            "injured" : {"total": 6233, "children": 1949, "woman": 1160},
+                            "displaced": 240000, 
+                            "hospitals_destroyed" : 23,
+                            "schools_destroyed" : 133,
+                            "children_need_psychosocial_treatment" : 27000,
+                            "need_shelter" : 240000,
+                            "need_food" : 240000
+                            },
+                        "isreal" : {
+                            "killed" : {"total": 56, "civilian": 2, "children" : 0, "woman": 0}
+                        }
+                }
+        },
+        {
+            "date": "29_07_2014",
+            "data": { "palestine": {
+                            "killed" : {"total": 1065, "civilian": 795, "children" : 229, "woman": 118},
+                            "injured" : {"total": 6233, "children": 1949, "woman": 1160},
+                            "displaced": 215000, 
+                            "hospitals_destroyed" : 22,
+                            "schools_destroyed" : 133,
+                            "children_need_psychosocial_treatment" : 194000,
+                            "need_shelter" : 215000,
+                            "need_food" : 215000
+                            },
+                        "isreal" : {
+                            "killed" : {"total": 47, "civilian": 2, "children" : 0, "woman": 0}
+                        }
+                }
+        },
+        {
+            "date": "28_07_2014",
+            "data": { "palestine": {
+                            "killed" : {"total": 1065, "civilian": 795, "children" : 229, "woman": 118},
+                            "injured" : {"total": 6233, "children": 1949, "woman": 1160},
+                            "displaced": 215000, 
+                            "hospitals_destroyed" : 22,
+                            "schools_destroyed" : 133,
+                            "children_need_psychosocial_treatment" : 194000,
+                            "need_shelter" : 215000,
+                            "need_food" : 215000
+                            },
+                        "isreal" : {
+                            "killed" : {"total": 47, "civilian": 3, "children" : 0, "woman": 0}
+                        }
+                }
+        }
+
+    ]
+}
+               

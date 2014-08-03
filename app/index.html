@@ -1,0 +1,220 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>ocha</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="shortcut icon" href="/favicon.ico">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css styles/vendor.css -->
+        <!-- bower:css -->
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+        <!-- endbower -->
+        <!-- endbuild -->
+        <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+
+        <script type="text/template" id="killed">
+            <div class="killed row">
+                <h2>Total number of deaths up to <%- date.replace(/_/g,'/') %></h2>
+                <div class="col-md-6 palestine">
+                    <div class="row">
+                        <h4 class="palestine">Killed in Palestine</h4>
+                        <span class="total"><%- data.palestine.killed.total.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") %></span>
+                    </div>
+                    <div class="row percent">
+                        <span><%- data.palestine.killed.civilianPercent %>% Civilians</span>
+                        <div class="percentCivil" style="width: <%- data.palestine.killed.civilianPercent %>%">
+                            
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 civil">
+                            <span class="breakdown_num"><%- data.palestine.killed.civilian %></span>
+                            <span class="breakdown_title">Civilians</span>
+                        </div>
+                        <div class="col-md-4 child">
+                            <span class="breakdown_num"><%- data.palestine.killed.children %></span>
+                            <span class="breakdown_title">Children</span>
+                        </div>
+                        <div class="col-md-4 woman">
+                            <span class="breakdown_num"><%- data.palestine.killed.woman %></span>
+                            <span class="breakdown_title">Woman</span>
+                        </div>
+                    </div>
+                    <div class="row vis">
+                        <% for (var i = 1; i <= data.palestine.killed.children; i++) {  %>
+                            <span class="child"><div class='img'></div></span>
+                        <% } %>
+                        <% for (var i = 1; i <= data.palestine.killed.woman; i++) {  %>
+                            <span class="woman"><div class='img'></div></span>
+                        <% } %>
+                        <% for (var i = 1; i <= data.palestine.killed.civilian - (data.palestine.killed.children + data.palestine.killed.woman); i++) {  %>
+                            <span class="civil"><div class='img'></div></span>
+                        <% } %>
+                    </div>
+                </div>
+
+                <div class="col-md-6 isreal">
+                    <div class="row">
+                        <h4 class="isreal">Killed in Isreal</h4>
+                        <span class="total isreal"><%- data.isreal.killed.total %></span>
+                    </div>
+                    <div class="row percent">
+                        <span><%- data.isreal.killed.civilianPercent %>% Civilians</span>
+                        <div class="percentCivil" style="width: <%- data.isreal.killed.civilianPercent %>%">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 civil">
+                            <span class="breakdown_num"><%- data.isreal.killed.civilian %></span>
+                            <span class="breakdown_title">Civilians</span>
+                        </div>
+                        <div class="col-md-4 child">
+                            <span class="breakdown_num"><%- data.isreal.killed.children %></span>
+                            <span class="breakdown_title">Children</span>
+                        </div>
+                        <div class="col-md-4 woman">
+                            <span class="breakdown_num"><%- data.isreal.killed.woman %></span>
+                            <span class="breakdown_title">Woman</span>
+                        </div>
+                    </div>
+                    <div class="row vis">
+                        <% for (var i = 1; i <= data.isreal.killed.children; i++) {  %>
+                            <span class="child"><div class='img'></div></span>
+                        <% } %>
+                        <% for (var i = 1; i <= data.isreal.killed.woman; i++) {  %>
+                            <span class="woman"><div class='img'></div></span>
+                        <% } %>
+                        <% for (var i = 1; i <= data.isreal.killed.civilian - (data.isreal.killed.children + data.isreal.killed.woman); i++) {  %>
+                            <span class="civil"><div class='img'></div></span>
+                        <% } %>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <h2>Total number of injuries up to <%- date.replace(/_/g,'/') %></h2>
+                <div class="col-md-6 injured palestine">
+                    <div class="row">
+                        <h4 class="palestine civil">Injured in Palestine</h4>
+                        <span class="total"><%- data.palestine.injured.total.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") %></span>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 child">
+                            <span class="breakdown_num"><%- data.palestine.injured.children.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") %></span>
+                            <span class="breakdown_title">Children</span>
+                        </div>
+                        <div class="col-md-6 woman">
+                            <span class="breakdown_num"><%- data.palestine.injured.woman.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") %></span>
+                            <span class="breakdown_title">Woman</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 injured isreal">
+                    <div class="row">
+                        <h4 class="isreal">Injured in Isreal</h4>
+                        <span class="total isreal"><%- 0 %></span>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 child">
+                            <span class="breakdown_num"><%- 0 %></span>
+                            <span class="breakdown_title">Children</span>
+                        </div>
+                        <div class="col-md-6 woman">
+                            <span class="breakdown_num"><%- 0 %></span>
+                            <span class="breakdown_title">Woman</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <h2>Damage</h2>
+                <div class="col-md-12 damage">
+                    <div class="row">
+                        <h4 class="palestine">Damage in Palestine</h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <span class="breakdown_num"><%- data.palestine.displaced.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") %></span>
+                            <span class="breakdown_title">Displaced People</span>
+                        </div>
+                        <div class="col-md-4">
+                            <span class="breakdown_num"><%- data.palestine.schools_destroyed %></span>
+                            <span class="breakdown_title">School Damaged</span>
+                        </div>
+                        <div class="col-md-4">
+                            <span class="breakdown_num"><%- data.palestine.hospitals_destroyed %></span>
+                            <span class="breakdown_title">Health Facilities Destroyed</span>
+                        </div>
+                        </div>
+                </div>
+
+            </div>
+        </script>
+    </head>
+    <body>
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="header">
+
+        </div>
+
+        <div class="container">
+
+
+            <div class="row">
+                
+            </div>
+
+            <div class="footer">
+            </div>
+
+        </div>
+
+
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="bower_components/underscore/underscore.js"></script>
+        <script src="bower_components/firebase/firebase.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!--
+        < Google Analytics: change UA-XXXXX-X to be your site's ID.
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+        -->
+
+        <!-- build:js scripts/plugins.js -->
+        <script src="bower_components/bootstrap/js/affix.js"></script>
+        <script src="bower_components/bootstrap/js/alert.js"></script>
+        <script src="bower_components/bootstrap/js/dropdown.js"></script>
+        <script src="bower_components/bootstrap/js/tooltip.js"></script>
+        <script src="bower_components/bootstrap/js/modal.js"></script>
+        <script src="bower_components/bootstrap/js/transition.js"></script>
+        <script src="bower_components/bootstrap/js/button.js"></script>
+        <script src="bower_components/bootstrap/js/popover.js"></script>
+        <script src="bower_components/bootstrap/js/carousel.js"></script>
+        <script src="bower_components/bootstrap/js/scrollspy.js"></script>
+        <script src="bower_components/bootstrap/js/collapse.js"></script>
+        <script src="bower_components/bootstrap/js/tab.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
