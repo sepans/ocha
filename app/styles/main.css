@@ -17,7 +17,7 @@ body {
 
 .container {
     background-color: #ededed;
-    background: url(../images/bg.png) 0 0 no-repeat;
+    background: url(../images/bg.png) -140px -30px repeat-x;
 }
 
 .header {
@@ -27,6 +27,8 @@ body {
 .header h3 {
     border: none;
     color: #5B92E5;
+    font-weight: normal;
+    font-size: 1.6em;
 }
 
 .header img {
@@ -37,18 +39,31 @@ body {
     margin-left: 0;
 }
 
+.section {
+    margin-bottom: 1.5em;
+}
+
 h2 {
-    font-size: 1.4em;
+    font-size: 1em;
     margin: 0;
     padding: 5px 0;
     border-bottom: 1px dotted #555;
-    margin-top: 20px;
+    margin-top: 10px;
+    font-weight: normal;
 }
 
 .total {
-    font-size: 3.2em;
-    font-weight: bold;
+    font-size: 4em;
+    font-weight: 600;
+    line-height: 1em;
+
 }
+
+.injured .total {
+    margin-bottom: 0.3em;
+    display: inline-block;
+}
+
 .breakdown_num {
     font-size: 1.8em;
     display: block;
@@ -87,6 +102,7 @@ h4 {
     background-size: auto 2em;
     padding-left: 2.5em;
     line-height: 2.1em;
+    margin-top: 20px;
 
 }
 
@@ -180,7 +196,7 @@ h4 {
     position: relative;
     padding-left: 5px;
     background-color: #AAA;
-    margin-top: 1.5em;
+    margin-top: 2em;
 }
 
 .percent span {
@@ -192,7 +208,7 @@ h4 {
 }
 
 .palestine .percentCivil {
-    background-color: #E34C47;
+    background-color: #534D4C;
 }
 
 .isreal .percentCivil {
@@ -211,6 +227,7 @@ h4 {
 .footer {
     margin: 0;
     margin-top :20px;
+    padding-top :20px;
     border-top: 1px solid #555;
 
 }
