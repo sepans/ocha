@@ -2,14 +2,32 @@
     "dailyData":
     [
         {
+            "date": "04_08_2014",
+            "data": { "palestine": {
+                            "killed" : {"total": 1717, "civilian": 1176, "children" : 377, "woman": 196},
+                            "injured" : {"total": 8265, "children": 2502, "woman": 1626},
+                            "displaced": 485000, 
+                            "hospitals_destroyed" : 34,
+                            "schools_destroyed" : 141,
+                            "children_need_psychosocial_treatment" : 373000,
+                            "need_shelter" : 255000,
+                            "need_food" : 255000
+                            },
+                        "isreal" : {
+                            "killed" : {"total": 67, "civilian": 2, "children" : 0, "woman": 0}
+                        }
+                }
+        },
+        {
             "date": "03_08_2014",
             "data": { "palestine": {
                             "killed" : {"total": 1525, "civilian": 1033, "children" : 329, "woman": 187},
-                            "injured" : {"total": 8265, "children": 2502, "woman": 1626, "elderly": 303},
-                            "displaced": 475000, 
+                            "injured" : {"total": 9078, "children": 2744, "woman": 1626, "elderly": 303},
+                            "displaced": 485000, 
                             "hospitals_destroyed" : 34,
-                            "schools_destroyed" : 138,
-                            "children_need_psychosocial_treatment" : 27000,
+                            "schools_destroyed" : 141,
+                            "children_need_psychosocial_treatment" : 303000,
+                            "families_home_destroyed": 10366,
                             "need_shelter" : 255000,
                             "need_food" : 255000
                             },
@@ -24,9 +42,9 @@
                             "killed" : {"total": 1439, "civilian": 925, "children" : 286, "woman": 187},
                             "injured" : {"total": 8265, "children": 2502, "woman": 1626, "elderly": 303},
                             "displaced": 240000, 
-                            "hospitals_destroyed" : 23,
+                            "hospitals_destroyed" : 24,
                             "schools_destroyed" : 133,
-                            "children_need_psychosocial_treatment" : 27000,
+                            "children_need_psychosocial_treatment" : 303000,
                             "need_shelter" : 255000,
                             "need_food" : 255000
                             },
