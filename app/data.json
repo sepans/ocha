@@ -2,6 +2,23 @@
     "dailyData":
     [
         {
+            "date": "05_08_2014",
+            "data": { "palestine": {
+                            "killed" : {"total": 1814, "civilian": 1312, "children" : 408, "woman": 214},
+                            "injured" : {"total": 9536, "children": 2877, "woman": 1626},
+                            "displaced": 520000, 
+                            "hospitals_destroyed" : 34,
+                            "schools_destroyed" : 141,
+                            "children_need_psychosocial_treatment" : 373000,
+                            "need_shelter" : 520000,
+                            "need_food" : 520000
+                            },
+                        "isreal" : {
+                            "killed" : {"total": 67, "civilian": 2, "children" : 0, "woman": 0}
+                        }
+                }
+        },
+        {
             "date": "04_08_2014",
             "data": { "palestine": {
                             "killed" : {"total": 1717, "civilian": 1176, "children" : 377, "woman": 196},
@@ -10,8 +27,8 @@
                             "hospitals_destroyed" : 34,
                             "schools_destroyed" : 141,
                             "children_need_psychosocial_treatment" : 373000,
-                            "need_shelter" : 255000,
-                            "need_food" : 255000
+                            "need_shelter" : 485000,
+                            "need_food" : 485000
                             },
                         "isreal" : {
                             "killed" : {"total": 67, "civilian": 2, "children" : 0, "woman": 0}
@@ -28,8 +45,8 @@
                             "schools_destroyed" : 141,
                             "children_need_psychosocial_treatment" : 303000,
                             "families_home_destroyed": 10366,
-                            "need_shelter" : 255000,
-                            "need_food" : 255000
+                            "need_shelter" : 485000,
+                            "need_food" : 485000
                             },
                         "isreal" : {
                             "killed" : {"total": 66, "civilian": 2, "children" : 0, "woman": 0}
