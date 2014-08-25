@@ -93,8 +93,8 @@ h4.palestine {
     background: url(../images/palestine-flag.png) 0 0 no-repeat;
 }
 
-h4.isreal {
-    background: url(../images/isreal-flag.png) 0 0 no-repeat;
+h4.israel {
+    background: url(../images/israel-flag.png) 0 0 no-repeat;
 
 }
 
@@ -118,7 +118,7 @@ h4 {
     color: #E34C47;
 }
 
-.isreal {
+.israel {
     color: #236E9B;
 }
 
@@ -181,11 +181,11 @@ h4 {
     background-color: #E34C47;
 }
 
-.vis .isreal {
+.vis .israel {
     background-color: #236E9B;
 }
 
-.isreal .vis .civil {
+.israel .vis .civil {
     background-color: #236E9B;
 }
 
@@ -211,7 +211,7 @@ h4 {
     background-color: #534D4C;
 }
 
-.isreal .percentCivil {
+.israel .percentCivil {
     background-color: #236E9B;
 }
 

@@ -12,7 +12,7 @@
 
 		latest.data.palestine.killed.civilianPercent = Math.round(latest.data.palestine.killed.civilian / latest.data.palestine.killed.total * 100);
 
-		latest.data.isreal.killed.civilianPercent = Math.round(latest.data.isreal.killed.civilian / latest.data.isreal.killed.total * 100);
+		latest.data.israel.killed.civilianPercent = Math.round(latest.data.israel.killed.civilian / latest.data.israel.killed.total * 100);
 
 		var killed = _.template(
             $( '#killed' ).html()

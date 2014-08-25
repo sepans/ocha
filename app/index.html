@@ -59,38 +59,38 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 isreal">
+                <div class="col-md-6 israel">
                     <div class="row">
-                        <h4 class="isreal">Killed in Isreal</h4>
-                        <span class="total isreal"><%- data.isreal.killed.total %></span>
+                        <h4 class="israel">Killed in Israel</h4>
+                        <span class="total israel"><%- data.israel.killed.total %></span>
                     </div>
                     <div class="row percent">
-                        <span><%- data.isreal.killed.civilianPercent %>% Civilians</span>
-                        <div class="percentCivil" style="width: <%- data.isreal.killed.civilianPercent %>%">
+                        <span><%- data.israel.killed.civilianPercent %>% Civilians</span>
+                        <div class="percentCivil" style="width: <%- data.israel.killed.civilianPercent %>%">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-4 civil">
-                            <span class="breakdown_num"><%- data.isreal.killed.civilian %></span>
+                            <span class="breakdown_num"><%- data.israel.killed.civilian %></span>
                             <span class="breakdown_title">Civilians</span>
                         </div>
                         <div class="col-md-4 child">
-                            <span class="breakdown_num"><%- data.isreal.killed.children %></span>
+                            <span class="breakdown_num"><%- data.israel.killed.children %></span>
                             <span class="breakdown_title">Children</span>
                         </div>
                         <div class="col-md-4 woman">
-                            <span class="breakdown_num"><%- data.isreal.killed.woman %></span>
+                            <span class="breakdown_num"><%- data.israel.killed.woman %></span>
                             <span class="breakdown_title">Women</span>
                         </div>
                     </div>
                     <div class="row vis">
-                        <% for (var i = 1; i <= data.isreal.killed.children; i++) {  %>
+                        <% for (var i = 1; i <= data.israel.killed.children; i++) {  %>
                             <span class="child"><div class='img'></div></span>
                         <% } %>
-                        <% for (var i = 1; i <= data.isreal.killed.woman; i++) {  %>
+                        <% for (var i = 1; i <= data.israel.killed.woman; i++) {  %>
                             <span class="woman"><div class='img'></div></span>
                         <% } %>
-                        <% for (var i = 1; i <= data.isreal.killed.civilian - (data.isreal.killed.children + data.isreal.killed.woman); i++) {  %>
+                        <% for (var i = 1; i <= data.israel.killed.civilian - (data.israel.killed.children + data.israel.killed.woman); i++) {  %>
                             <span class="civil"><div class='img'></div></span>
                         <% } %>
                     </div>
@@ -116,10 +116,10 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 injured isreal">
+                <div class="col-md-6 injured israel">
                     <div class="row">
-                        <h4 class="isreal">Injured in Isreal</h4>
-                        <span class="total isreal">N/A</span>
+                        <h4 class="israel">Injured in Israel</h4>
+                        <span class="total israel">N/A</span>
                     </div>
                     <div class="row">
                         <div class="col-md-4 child">
@@ -147,7 +147,7 @@
                         </div>
                         <div class="col-md-4">
                             <span class="breakdown_num"><%- data.palestine.schools_destroyed %></span>
-                            <span class="breakdown_title">School Damaged or Destroyed</span>
+                            <span class="breakdown_title">Schools Damaged or Destroyed</span>
                         </div>
                         <div class="col-md-4">
                             <span class="breakdown_num"><%- data.palestine.hospitals_destroyed %></span>
